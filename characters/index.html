@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link href=".\index.css" rel="stylesheet"/>
         <script src="..\theme.js"></script>
     </head>
     <!-- END - title, sytle sheet, java, and theme selector display --> 
@@ -15,124 +15,6 @@
     <option name="reverse">reverse</option>
     <option name="dark">dark</option>
 </select>
-
-<style>
-
-    /*START   IMPORT SPONGEBOB FONT - CSS*/
-    @font-face { font-family: Spongebob; src: url('SpongeboyRegular-gx2n6.otf'); } 
-    blockquote {
-        font-size: small;
-        letter-spacing: normal;
-        font-family: Spongebob
-    }
-    /*END   IMPORT SPONGEBOB FONT - CSS */
-
-    /*START   HOVER FEATURE - CSS */
-    .container {
-        position: relative;
-        width: 50%;
-        opacity: 100%;
-    }
-
-    .image {
-        display: block;
-        width: 485px;
-        height: 500px;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 175%;
-        opacity: 0;
-        transition: .5s ease;
-
-    }
-
-    .container:hover .overlay {
-        opacity: 100%;
-    }
-
-    .text {
-        color: var(--text-color);
-        font-size: small;
-        letter-spacing: x-large;
-        line-height: 200%;
-        font-family: Spongebob;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 460px;
-        width: 460px;
-        -webkit-transform: translate(-25%, -25%);
-        -ms-transform: translate(-25%, -25%);
-        transform: translate(-50%, -50%);
-        text-align: left;
-    }
-    /*END   HOVER FEATURE - CSS */
-
-    /*START DARK HOVER FEATURE - CSS */
-    .dark .slider-frame {
-        overflow: hidden;
-        height: 500px;
-        width: 540px;
-        margin-left: 0px;
-        margin-top: 0px;
-        z-index: 2;
-        opacity: 100%;
-        background: none;
-        padding: 0px;
-    }
-    
-    .dark .container {
-        position: relative;
-        width: 600px;
-        opacity: 100%;
-    }
-
-    .dark .image {
-        display: block;
-        width: 500px;
-        height: 500px;
-    }
-
-    .dark .overlay {
-        position: absolute;
-        top: 20px;
-        left: 10px;
-        height: 500px;
-        width: 540px;
-        opacity: 0;
-        transition: .5s ease;
-        z-index: 3;
-    }
-
-    .dark .container:hover .overlay {
-        opacity: 100%;
-    }
-
-    .dark .text {
-        color: var(--text-color);
-        font-size: 12px;
-        letter-spacing: x-large;
-        line-height: 200%;
-        font-family: Spongebob;
-        position: absolute;
-        top: 250px;
-        right: 300px;
-        height: 500px;
-        width: 500px;
-        -webkit-transform: translate(-25%, -25%);
-        -ms-transform: translate(-25%, -25%);
-        transform: translate(-50%, -50%);
-        text-align: left;
-    }
-    /*END DARK HOVER FEATURE - CSS */
-</style>
 
     <!-- START - links for different pages in top bar -->
 <ul>
