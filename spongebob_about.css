@@ -73,6 +73,10 @@
     font-family: Spongebob; src: url('SpongeboyRegular-gx2n6.otf'); 
 }
 
+html {
+    zoom: 90%;
+}
+
 /* for body and html elements, include these 3 attributes listed */
 body, html {
     height: 100%;
