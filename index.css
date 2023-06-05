@@ -26,8 +26,42 @@
     --header-background: #a3a3a3;
     --text-color: #000000;
     --header-position: fixed;
-    --header-bottom: 0px;
+    --header-top: 0px;
 }
+
+/* START - Code for Top Bar */
+    /* format for position */
+    ul {
+        position: var(--header-position);
+        top: var(--header-top);
+        bottom: var(--header-bottom);
+        left: 0;
+        right: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--header-background);
+        z-index: 4;
+    }
+        /* format for text in top bar */
+    li {
+        float: left;
+    }
+        /* format for anchors for text in top bar */
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-family: Spongebob;
+    }
+        /* format for mouse hover over top bar. changes background of option to white */
+    li a:hover {
+        background-color: rgb(255, 255, 255);
+    }
+    /* END - Code for top bar */
 
 /* applies to all divs */
 * {
@@ -79,63 +113,6 @@ img div {
     display: none;
 }
 
-/* START - format to make table for character slideshow and description */
-    /* format for column */
-.column {
-    float: left;
-    width: 50%;
-    padding: 15px;
-}
-
-.dark .column {
-    float: left;
-    width: 600px;
-    padding: 25px;
-    zoom: 110%;
-}
-
-    /* format for row (clear floats between images) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* START - Code for Top Bar */
-    /* format for position */
-ul {
-    position: var(--header-position);
-    top: var(--header-top);
-    bottom: var(--header-bottom);
-    left: 0;
-    right: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--header-background);
-    z-index: 4;
-}
-    /* format for text in top bar */
-li {
-    float: left;
-}
-    /* format for anchors for text in top bar */
-li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-family: Spongebob;
-}
-    /* format for mouse hover over top bar. changes background of option to white */
-li a:hover {
-    background-color: rgb(255, 255, 255);
-}
-/* END - Code for top bar */
-
-
 /*  */
 .title {
     text-align: center;
@@ -164,7 +141,7 @@ li a:hover {
 #tab {
     tab-size: 1;
 }
-/*-----------------------------------START - IMAGE CONTAINER FOR BODY----------------------*/
+/*---START - PAGE SPECIFIC CONTENT & IMAGE CONTAINER FOR BODY----------------------*/
 
 /* position images in format below. images differ in "background-image" path */
 .home-img-1, .def-home-img-2, .rev-home-img-2, .dark-home-img-2 {
