@@ -112,6 +112,21 @@ li a:hover {
 }
 /* END - Code for top bar */
 
+.button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  &:hover {
+    fill: white;
+  }
+}
+
+.buttons {
+  padding: 1rem;
+  background: #f06d06;
+  float: left;
+}
+
 /* id for centering images */
 #center_img {
     text-align: center
